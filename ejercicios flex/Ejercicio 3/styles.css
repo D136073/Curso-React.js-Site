@@ -1,0 +1,44 @@
+.Contenedor{
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    height: 20%;
+    
+    
+
+}
+.divrojo{
+    
+    color: white;
+    background-color: red;
+    height: 100;
+    width: 100;
+    align-items: center;
+    text-align: center;
+}
+.divazul{
+   
+    color: white;
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    height: 100;
+    width: 100;
+}
+.divverde{
+    
+    color: white;
+    background-color: green;
+    align-items: center;
+    text-align: center;
+    height: 100;
+    width: 100;
+
+}
+body{
+    display: flex;
+}
