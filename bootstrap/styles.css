@@ -1,0 +1,35 @@
+#fila1{
+    background-color: black;
+    color: white;
+    place-content: center;
+    padding: 2%;
+}
+#tarjeta {
+    display: flex;
+    background-image: linear-gradient(red,black);
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+#imagen{
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+#columna1{
+    color: black;
+    font-weight: bold;
+    display:flex;
+    text-align: center;
+    place-content: center;
+    background-color: yellow;
+    align-items: center;
+}
+#columna2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    place-content: center;
+    background-color: orange;
+    align-items: center;
+}
