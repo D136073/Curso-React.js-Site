@@ -1,0 +1,60 @@
+#body{
+    background-color: black;
+}
+#logo{
+    display: flex;
+    place-content: center;
+}
+#head{
+    background-image: url("/img/banner.png");
+    background-size: cover;
+}
+#main{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+#navegador{
+    background-color: rgb(255, 234, 117);
+}
+#menu{
+    display: flex;
+}
+#filatarjeta{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: black;
+    color: white;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-style: italic;
+}
+#cardfoot{
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-color: rgb(255, 234, 117);
+    color: rgb(255, 234, 117);;
+}
+#cardcuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulotemporal{
+    display: flex;
+    align-content: center;
+    color: white;
+}
