@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="square" id="square1"></div>
+<div class="square" id="square2"></div>
+<div class="square" id="square3"></div>
+
+<script>
+  const squares = document.querySelectorAll('.square');
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  squares.forEach(square => {
+    square.style.backgroundColor = getRandomColor();
+
+    square.addEventListener('click', () => {
+      let newColor = getRandomColor();
+      while (newColor === square.style.backgroundColor) {
+        newColor = getRandomColor();
+      }
+      square.style.backgroundColor = newColor;
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.aprobados-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desaprobados-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aprobado {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.desaprobado {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

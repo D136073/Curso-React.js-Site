@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="app" class="aprobados-column"></div>
+    <div id="app2" class="desaprobados-column"></div>
+
+    <script>
+        var alumnos = [
+            {
+                nombre: 'Juan Gomez',
+                nota: 7
+            }, {
+                nombre: 'Pedro Rodriguez',
+                nota: 4
+            }, {
+                nombre: 'Roxana García',
+                nota: 8
+            }, {
+                nombre: 'Luciano Lopez',
+                nota: 5
+            }, {
+                nombre: 'Fernanda Gimenez',
+                nota: 6
+            }, {
+                nombre: 'Florencia Martinez',
+                nota: 10
+            }, {
+                nombre: 'Raul Sanchez',
+                nota: 7
+            }, {
+                nombre: 'Sandra Figueroa',
+                nota: 8
+            }
+        ];
+
+        var aprobados = alumnos.filter(alumno => alumno.nota >= 7);
+        var desaprobados = alumnos.filter(alumno => alumno.nota < 7);
+
+        var appContainer = document.getElementById('app');
+        var appContainer2 = document.getElementById('app2');
+
+        aprobados.forEach(alumno => {
+            var div = document.createElement('div');
+            div.textContent = alumno.nombre;
+            div.classList.add('aprobado');
+            appContainer.appendChild(div);
+        });
+
+        desaprobados.forEach(alumno => {
+            var div = document.createElement('div');
+            div.textContent = alumno.nombre;
+            div.classList.add('desaprobado');
+            appContainer2.appendChild(div);
+        });
+    </script>
+
+</body>
+
+</html>
