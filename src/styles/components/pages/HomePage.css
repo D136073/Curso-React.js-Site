@@ -1,0 +1,10 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+h2{
+    color: red;
+    font-style: italic;
+}
